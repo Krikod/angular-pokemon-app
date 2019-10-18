@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- Import config de systemjs -->
+    <script src="systemjs.config.js"></script>
+    <!-- On indique à systemjs comment lancer l'app,
+    en chargeant le main.js. Main.ts deviendra main.js qd on compilera -->
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+          <!-- Toute l'app ici -->
+    <pokemon-app>Loading AppComponent content here ...</pokemon-app>
+  </body>
+</html>
