@@ -15,7 +15,7 @@ let AppComponent = class AppComponent {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pokemon-app',
-        template: `<h1>Bonjour... {{name}}</h1>`,
+        template: `<h1>Bonjour!!!!... {{name}}</h1>`,
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
