@@ -20,8 +20,8 @@ var AppComponent = (function () {
     AppComponent.prototype.onClick = function () {
         console.log("Clic !");
     };
-    AppComponent.prototype.onKey = function (event) {
-        this.value = 'Bonjour ' + event.target.value;
+    AppComponent.prototype.onKey = function (value) {
+        this.value = 'Bonjour ' + value;
     }; // event.target renvoie à un html input element
     AppComponent.prototype.selectPokemon = function (pokemon) {
         console.log("Vous avez sélectionné " + pokemon.name);

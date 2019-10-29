@@ -20,8 +20,8 @@ export class AppComponent implements OnInit {
     console.log("Clic !");
   }
 
-  onKey(event: KeyboardEvent) {
-    this.value = 'Bonjour ' + (<HTMLInputElement>event.target).value;
+  onKey(value: string) {
+    this.value = 'Bonjour ' + value;
   } // event.target renvoie à un html input element
 
   selectPokemon(pokemon: Pokemon) { // objet de type pokemon

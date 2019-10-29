@@ -7,6 +7,6 @@
 <button (click)="onClick()">Cliquer ici !</button>
 <!--  (click): event de type click à intercepter
     onClick: methode appelée chaque fois qu'utilisateur clique -->
-    <input (keyup)="onKey($event)">
+    <input #box (keyup)="onKey(box.value)">
+    <p>{{ box.value }}</p> <!-- afficher var #box déclarée ds template -->
     <p>{{ value }}</p>
-    
