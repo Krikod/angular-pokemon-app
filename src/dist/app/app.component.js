@@ -11,10 +11,14 @@ var mock_pokemons_1 = require("./mock-pokemons");
 var AppComponent = (function () {
     function AppComponent() {
         this.pokemons = null; // propr pokemons, typée comme 
+        this.title = "Liste des Pokémons";
     }
     // tab.de type Pokemon
     AppComponent.prototype.ngOnInit = function () {
         this.pokemons = mock_pokemons_1.POKEMONS;
+    };
+    AppComponent.prototype.onClick = function () {
+        console.log("Clic !");
     };
     AppComponent.prototype.selectPokemon = function (pokemon) {
         console.log("Vous avez sélectionné " + pokemon.name);
