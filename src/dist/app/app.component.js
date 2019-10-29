@@ -22,7 +22,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pokemon-app',
-            template: "<h1>Pokemons</h1>",
+            templateUrl: './app/app.component.html'
         })
     ], AppComponent);
     return AppComponent;
