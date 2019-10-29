@@ -5,6 +5,8 @@
 </ul>
 
 <button (click)="onClick()">Cliquer ici !</button>
-
 <!--  (click): event de type click à intercepter
     onClick: methode appelée chaque fois qu'utilisateur clique -->
+    <input (keyup)="onKey($event)">
+    <p>{{ value }}</p>
+    

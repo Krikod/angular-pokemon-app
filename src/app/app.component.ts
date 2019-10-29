@@ -9,8 +9,9 @@ import { POKEMONS } from './mock-pokemons';
 })
 export class AppComponent implements OnInit { 
   private pokemons: Pokemon[] = null; // propr pokemons, typée comme 
-  private title:string = "Liste des Pokémons";
-                              // tab.de type Pokemon
+  private title:string = "Liste des Pokémons";// tab.de type Pokemon
+  private value:string = '';
+
   ngOnInit() { // initializing input properties
       this.pokemons = POKEMONS;
   }
@@ -18,6 +19,10 @@ export class AppComponent implements OnInit {
   onClick() {
     console.log("Clic !");
   }
+
+  onKey(event: KeyboardEvent) {
+    this.value = 'Bonjour ' + (<HTMLInputElement>event.target).value;
+  } // event.target renvoie à un html input element
 
   selectPokemon(pokemon: Pokemon) { // objet de type pokemon
     console.log("Vous avez sélectionné " + pokemon.name);
